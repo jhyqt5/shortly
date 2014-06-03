@@ -1,0 +1,10 @@
+<h1>Links</h1>
+<%= link_to 'make links', new_link_path %>
+<ul>
+<% @links.each do |link| %>
+
+<li><%= link.long_url %>
+<%= link_to link.short_url, link_path(link) %>
+</li>
+<% end %>
+</ul>

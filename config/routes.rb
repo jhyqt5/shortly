@@ -1,6 +1,6 @@
 Shortly::Application.routes.draw do
-
-  resources :users
-  root :to => 'users#index'
+  get '/url/:short_url' , :to => 'links#url', as: 'url'
+  resources :links
+  root :to => 'links#index'
 
 end

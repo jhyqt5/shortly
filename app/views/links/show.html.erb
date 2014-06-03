@@ -1,0 +1,6 @@
+<h1><%= @link.long_url %></h1>
+<p><%= link_to @link.short_url, url_path(@link.short_url)  %></p>
+<span><%= link_to 'home', links_path %></span>
+<span><%= link_to 'edit', edit_link_path(@link) %></span>
+<span><%= link_to 'delete', link_path(@link), :method => :delete %></span>
+
